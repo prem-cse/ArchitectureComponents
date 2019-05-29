@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTextview"
+        android:text="Random number"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainTextview"
+        android:gravity="center"
+        android:text="Update"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainUpdateButton"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainUpdateButton"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Add New Note"
+        android:id="@+id/mainNewnote"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainRecyclerView"
+        android:background="#D3D3D3"
+        android:layout_below="@id/mainNewnote"/>
+
+
+</RelativeLayout>
